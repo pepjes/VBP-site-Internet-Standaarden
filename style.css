@@ -14,11 +14,8 @@ body {
 }
 
 
-video {
-    width: 100vw;
-}
-
 .backgound-video {
+    width: 100vw;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -179,7 +176,8 @@ footer {
 .content-container {
     width: 70VW;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     background-color: rgb(57, 55, 64);
     padding: 1em;
     border-radius: 50px;
@@ -188,26 +186,44 @@ footer {
 
 }
 
-.content-visual {
+.content-foto {
     max-width: 50%;
     padding: 1em;
+   
 }
 
 .content-txt { 
     max-width: 50%;
     padding: 1em;
     display: flex;
-    justify-content: center; /* Horizontale centrering */
+    justify-content: space-evenly; /* Horizontale centrering */
     align-items: center;     /* Verticale centrering */
     height: 400px;           /* Stel de hoogte in op de gewenste waarde */
 }
 
 .content-container img { 
-    
+    max-width: 80%;
     max-height: 500px;
+    margin-left: 4em;
 }
 
 h4 {
     font-size: 1.5em;
+    margin-right: 4em;
     
+}
+
+
+/* ------------ VIDEO PAGE ------------ */ 
+
+
+.content-video {
+    max-height: 350px;
+    max-width: 100%;
+    margin-left: 4em;
+}
+
+.content-video video {
+    max-width: 100%;
+    max-height: 350px;
 }
