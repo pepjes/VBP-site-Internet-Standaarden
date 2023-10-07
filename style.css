@@ -2,15 +2,212 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+ 
+body {  
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(28, 27, 32);
+      
 }
 
-body {
-    background-color: lightslategray;
 
+video {
+    width: 100vw;
 }
+
+.backgound-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .backgound-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .backgound-video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+/* ------------ HEADER ------------ */ 
+
+header {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: fit-content;
+    min-height: 5vh;
+    
+}
+
+.logo img {
+    height: 8vh;
+    margin: 2em 2em 10em 2em;
+}
+
+.logo-light img { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1em;
+    width: 12vw;
+    
+}
+
+nav { 
+    border: 1px solid white;
+    border-style: none none solid none;
+    padding-bottom: 1em;
+}
+
+nav li {
+    display: inline;
+    margin: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 1em;
+}
+
+/* ------------ MAIN PAGE ------------ */ 
+
+main {
+    min-height: 75vh;
+    color: white;
+}
+
+section {
+    
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.butn1 {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    padding: 10px 20px;
+    margin: 2em;
+    border: 2px solid #000000;
+    border-radius: 10px; /* Rounded border */
+    background-color: transparent; /* Transparent background */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+      
+a.butn1:hover {
+    background-color: #000000; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Change shadow on hover */
+    transform: translateY(-4px); /* Lift the button slightly on hover */
+}
+
 
 h1 {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    font-family: 'Kanit' ,'Lilita One', cursive;
+    font-weight: 800;
+    padding: 1rem;
+}
 
-    color: antiquewhite;
-    font-size: 100px;
+
+h2 {
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.txt-home{
+
+    color: black;
+}
+
+
+/* ------------ FOOTER ------------ */ 
+
+h3 { 
+   
+    text-align: center;
+    font-size: 1em;   
+}
+
+footer { 
+    margin: 0 auto;
+    min-height: 10vh;
+    width: fit-content;
+    color: white;
+   
+    
+}
+
+.nav-footer {
+    
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid white;
+    border-style: none none solid none;
+
+}
+
+.nav-footer a { 
+    color: white;
+}
+
+
+
+/* ------------ FOTOGRAFIE PAGE ------------ */ 
+
+
+.content-container {
+    width: 70VW;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(57, 55, 64);
+    padding: 1em;
+    border-radius: 50px;
+    box-shadow: inset 0 0 30px 80px rgb(28, 27, 32);
+    
+
+}
+
+.content-visual {
+    max-width: 50%;
+    padding: 1em;
+}
+
+.content-txt { 
+    max-width: 50%;
+    padding: 1em;
+    display: flex;
+    justify-content: center; /* Horizontale centrering */
+    align-items: center;     /* Verticale centrering */
+    height: 400px;           /* Stel de hoogte in op de gewenste waarde */
+}
+
+.content-container img { 
+    
+    max-height: 500px;
+}
+
+h4 {
+    font-size: 1.5em;
+    
 }
