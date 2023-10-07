@@ -132,6 +132,7 @@ h1 {
     font-size: 2em;
     font-weight: 800;
     padding: 1rem;
+    margin-bottom: 1em;
 }
 
 
@@ -267,7 +268,7 @@ h4 {
     max-width: 100%;
     max-height: 100vh;
     position: absolute;
-    object-fit: cover;
+    object-fit: fill;
     right: 0;
     top: 0;
     z-index: -1;
@@ -278,6 +279,7 @@ h5 {
     color: #ffffff;
     font-weight: 300;
     padding: 1em 5em;
+    margin-bottom: 1em;
 }
 
 /*  Rollover image styles  */
@@ -290,7 +292,7 @@ h5 {
   }
 
 .Sirv {
-    max-width: 30vw;
+    max-width: 20vw;
    
 }
 
@@ -302,7 +304,12 @@ h5 {
     bottom: 0;
     opacity: 0;
     transition: opacity .5s;
+    margin: 0 auto;
   }
   .figure:hover img.Sirv.image-hover {
     opacity: 1;
+    margin: 0 auto;
   }
+
+  /* ------------ VIDEO PAGE ------------ */
+  
