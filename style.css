@@ -160,6 +160,7 @@ footer {
 
 .nav-footer {
     margin: 1em auto;
+    margin-top: 2em;
     text-align: center;
     border: 1px solid white;
     border-style: none none solid none;
